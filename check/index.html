@@ -1,0 +1,1971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+  <title>Vanilla Gift</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+
+  <link rel="icon" type="image/x-icon" href="https://balance.vanillagift.com/favicon.ico">
+  <link rel="canonical" href="https://www.vanillagift.com/">
+  <script type="text/javascript" async="" src="./files/recaptcha__en.js.descarga"></script>
+  <script async="" src="./files/fbevents.js.descarga"></script>
+  <script src="./files/bat.js.descarga" async=""></script>
+  <script src="./files/pdfmake.js.descarga"></script>
+  <script src="./files/vfs_fonts.js.descarga"></script>
+  <link rel="stylesheet" href="./files/styles.css">
+  <style>
+    #feedback[_ngcontent-sgs-c0] {
+      height: 165px;
+      width: auto;
+      position: fixed;
+      top: 40%;
+      left: -6px;
+      z-index: 999;
+      transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg)
+    }
+
+    #feedback[_ngcontent-sgs-c0] li[_ngcontent-sgs-c0] {
+      list-style-type: none
+    }
+
+    #feedback[_ngcontent-sgs-c0] a[_ngcontent-sgs-c0] {
+      display: block;
+      background: #ed1c24;
+      padding: 9px 16px 12px;
+      color: #fff;
+      font-size: 20px;
+      text-decoration: none;
+      text-align: center;
+      border: 1px solid #f6f6f6;
+      border-top: none;
+      font-family: QuincyCF-Regular;
+      line-height: 20px
+    }
+
+    @media (min-width:768px) {
+      .fixedBody[_ngcontent-sgs-c0] {
+        padding-top: 144px
+      }
+    }
+
+    @media (max-width:767px) {
+      .fixedBody[_ngcontent-sgs-c0] {
+        padding-top: 90px
+      }
+    }
+  </style>
+  <style>
+    .loader[_ngcontent-sgs-c2] {
+      position: fixed;
+      overflow: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+
+    .backdrop[_ngcontent-sgs-c2] {
+      z-index: 50;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(211, 211, 211, .3)
+    }
+
+    .progress-bar[_ngcontent-sgs-c2] {
+      width: auto;
+      height: .25rem;
+      background-color: rgba(204, 204, 204, .25)
+    }
+
+    .progress-bar[_ngcontent-sgs-c2] .progress-track[_ngcontent-sgs-c2] {
+      position: relative;
+      width: auto;
+      height: 100%;
+      background-color: #8f97a4
+    }
+
+    .progress-bar.progress-indeterminate[_ngcontent-sgs-c2] .progress-track[_ngcontent-sgs-c2],
+    .search[data-state=searching][_ngcontent-sgs-c2] .progress-bar.search-state[_ngcontent-sgs-c2] .progress-track[_ngcontent-sgs-c2] {
+      position: static;
+      width: auto;
+      height: auto;
+      transition: none
+    }
+
+    .progress-circle.progress-determinate[_ngcontent-sgs-c2],
+    .search[data-state=searching][_ngcontent-sgs-c2] .progress-determinate.search-state[_ngcontent-sgs-c2] {
+      position: relative
+    }
+
+    .progress-circle.progress-indeterminate[_ngcontent-sgs-c2]:before,
+    .search[data-state=searching][_ngcontent-sgs-c2] .search-state[_ngcontent-sgs-c2]:before {
+      position: relative;
+      display: block;
+      content: '';
+      border-style: solid;
+      border-color: rgba(204, 204, 204, .25);
+      border-left-color: #8f97a4;
+      transform: translateZ(0);
+      border-radius: 50%
+    }
+
+    .progress-circle.progress-indeterminate.progress-lg[_ngcontent-sgs-c2]:before,
+    .search[data-state=searching][_ngcontent-sgs-c2] .progress-lg.search-state[_ngcontent-sgs-c2]:before {
+      width: 70px;
+      height: 70px;
+      border-width: 6px
+    }
+
+    .anim-spinner-indeterminate[_ngcontent-sgs-c2],
+    .btn-loading[_ngcontent-sgs-c2]:before,
+    .progress-circle.progress-indeterminate[_ngcontent-sgs-c2]:before,
+    .search[data-state=searching][_ngcontent-sgs-c2] .search-state[_ngcontent-sgs-c2]:before {
+      will-change: transform;
+      -webkit-animation: .8s linear infinite spinner-indeterminate;
+      animation: .8s linear infinite spinner-indeterminate
+    }
+
+    @-webkit-keyframes spinner-indeterminate {
+      0% {
+        transform: rotate(0)
+      }
+
+      100% {
+        transform: rotate(360deg)
+      }
+    }
+
+    @keyframes spinner-indeterminate {
+      0% {
+        transform: rotate(0)
+      }
+
+      100% {
+        transform: rotate(360deg)
+      }
+    }
+  </style>
+  <style>
+    .navbar-inverse[_ngcontent-sgs-c3] {
+      background-color: #ed1c24;
+      border-color: #ed1c24;
+      height: 55px
+    }
+
+    .navbar-inverse[_ngcontent-sgs-c3] a:focus,
+    .navbar-inverse[_ngcontent-sgs-c3] a:hover {
+      color: #abaaab
+    }
+
+    .navbar-inverse[_ngcontent-sgs-c3] .navbar-nav li.active {
+      padding: 15px 12px 12px
+    }
+
+    .navbar-inverse[_ngcontent-sgs-c3] .navbar-nav li.active+li.active {
+      padding-left: 0
+    }
+
+    .navbar-inverse[_ngcontent-sgs-c3] .navbar-nav li.active+li.active a {
+      border-left: 2px solid #abaaab;
+      padding-left: 12px
+    }
+
+    .navbar-inverse[_ngcontent-sgs-c3] .navbar-nav>.active a {
+      background-color: #ed1c24;
+      color: #fff
+    }
+
+    .navbar-inverse[_ngcontent-sgs-c3] .navbar-nav>.active a:focus {
+      background-color: #ed1c24 !important;
+      color: #fff
+    }
+
+    .navbar-inverse[_ngcontent-sgs-c3] .navbar-nav>.active a:hover {
+      background-color: #ed1c24;
+      color: #fff
+    }
+
+    .navbar-right[_ngcontent-sgs-c3] {
+      margin-right: 0 !important;
+      position: relative;
+      left: 9px
+    }
+
+    #navigationMain[_ngcontent-sgs-c3] li.active[_ngcontent-sgs-c3] a[_ngcontent-sgs-c3] {
+      color: #aaa9aa
+    }
+
+    #navigationMain[_ngcontent-sgs-c3] li[_ngcontent-sgs-c3] a[_ngcontent-sgs-c3]:active,
+    #navigationMain[_ngcontent-sgs-c3] li[_ngcontent-sgs-c3] a[_ngcontent-sgs-c3]:hover {
+      color: #abaaab !important;
+      text-decoration: none
+    }
+
+    #navigationMain[_ngcontent-sgs-c3] li[_ngcontent-sgs-c3] a[_ngcontent-sgs-c3]:focus {
+      color: inherit !important;
+      text-decoration: none
+    }
+
+    .colorValue[_ngcontent-sgs-c3] {
+      color: #aaa9aa
+    }
+
+    .navigation--desktop[_ngcontent-sgs-c3] li a.active {
+      color: #aaa9aa !important
+    }
+
+    .navigation--desktop[_ngcontent-sgs-c3] li a:active,
+    .navigation--desktop[_ngcontent-sgs-c3] li a:hover {
+      color: #abaaab !important;
+      text-decoration: none
+    }
+
+    .navigation--desktop[_ngcontent-sgs-c3] li a:focus {
+      color: inherit !important;
+      text-decoration: none
+    }
+
+    .programTitleMob[_ngcontent-sgs-c3] {
+      text-align: left;
+      color: #fff;
+      float: left;
+      position: relative;
+      left: 9%;
+      font-size: 11px
+    }
+
+    .brand-centered[_ngcontent-sgs-c3] {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0
+    }
+
+    .brand-centered[_ngcontent-sgs-c3] .navbar-brand[_ngcontent-sgs-c3] {
+      display: flex;
+      align-items: center
+    }
+
+    .mobileMenuContainer[_ngcontent-sgs-c3] {
+      left: -327px;
+      position: absolute;
+      transition: left 1s
+    }
+
+    .mobileMenuContainer.active[_ngcontent-sgs-c3] {
+      left: 0;
+      top: 0
+    }
+
+    .mobile-menu[_ngcontent-sgs-c3] {
+      position: fixed;
+      height: 100%;
+      width: 327px;
+      z-index: 9;
+      background-color: #ed1c24;
+      top: 0;
+      min-height: 450px
+    }
+
+    .mobile-menu-icon[_ngcontent-sgs-c3] {
+      left: 0;
+      top: 0;
+      position: fixed;
+      transition: left 1s;
+      height: 55px;
+      width: 55px;
+      z-index: 1
+    }
+
+    .mobile-menu-icon.active[_ngcontent-sgs-c3] {
+      left: 327px
+    }
+
+    .mobile-menu[_ngcontent-sgs-c3] ul[_ngcontent-sgs-c3] {
+      margin-top: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      margin-bottom: 10px
+    }
+
+    .mobileMenuDivider[_ngcontent-sgs-c3] {
+      border-bottom: 3px solid #e9decd
+    }
+
+    .mobile-menu[_ngcontent-sgs-c3] li[_ngcontent-sgs-c3] {
+      list-style: none;
+      cursor: pointer;
+      padding: 15px 7px
+    }
+
+    .mobile-menu[_ngcontent-sgs-c3] li[_ngcontent-sgs-c3]:hover {
+      background: #ed1c24;
+      color: #aaa9aa
+    }
+
+    @media (max-width:320px) {
+      .mobileMenuContainer[_ngcontent-sgs-c3] {
+        left: -272px
+      }
+
+      .mobile-menu[_ngcontent-sgs-c3] {
+        width: 270px
+      }
+
+      .mobile-menu-icon.active[_ngcontent-sgs-c3] {
+        left: 270px
+      }
+    }
+
+    @media screen and (min-width:321px) and (max-width:380px) {
+      .mobileMenuContainer[_ngcontent-sgs-c3] {
+        left: -322px
+      }
+
+      .mobile-menu[_ngcontent-sgs-c3] {
+        width: 320px
+      }
+
+      .mobile-menu-icon.active[_ngcontent-sgs-c3] {
+        left: 320px
+      }
+    }
+
+    img.mobile-logo[_ngcontent-sgs-c3] {
+      margin: 0 auto;
+      display: block;
+      padding-top: 4.5px
+    }
+
+    .navbar-right[_ngcontent-sgs-c3] .addToMenu[_ngcontent-sgs-c3] .active[_ngcontent-sgs-c3] {
+      color: #a9a8a9;
+      height: 0
+    }
+
+    .navbar-right[_ngcontent-sgs-c3] .addToMenu[_ngcontent-sgs-c3]+.addToMenu[_ngcontent-sgs-c3] a[_ngcontent-sgs-c3] {
+      padding-left: 15px;
+      border-left: 1px solid #fff
+    }
+
+    .main-copy[_ngcontent-sgs-c3] p {
+      display: block;
+      position: relative;
+      margin: 0
+    }
+
+    .sub-copy[_ngcontent-sgs-c3] {
+      padding-left: 10px
+    }
+
+    .sub-copy[_ngcontent-sgs-c3] p {
+      margin: 0
+    }
+
+    .main-copy[_ngcontent-sgs-c3],
+    .sub-copy[_ngcontent-sgs-c3] {
+      display: table-cell;
+      font-size: 11px;
+      font-family: Moderat-Regular;
+      padding-top: 12px;
+      line-height: 13px
+    }
+
+    @media (max-width:375px) {
+
+      .main-copy[_ngcontent-sgs-c3],
+      .sub-copy[_ngcontent-sgs-c3] {
+        position: relative;
+        left: 59px
+      }
+    }
+
+    .logo-copy[_ngcontent-sgs-c3] {
+      display: table;
+      color: #fff;
+      height: 55px;
+      font-family: OpenSans-Regular, Arial, Helvetica, sans-serif
+    }
+
+    @media (max-width:480px) {
+      .tooltipIcon[_ngcontent-sgs-c3] {
+        display: inline-block;
+        position: absolute;
+        left: 36px;
+        top: -3px
+      }
+    }
+
+    @media screen and (max-height:510px) {
+      .modal-image[_ngcontent-sgs-c3] {
+        max-width: 70%
+      }
+
+      .modal-close[_ngcontent-sgs-c3] {
+        margin-bottom: 25px
+      }
+    }
+
+    #mobileMenu[_ngcontent-sgs-c3] {
+      padding: 25px
+    }
+
+    .modal-active[_ngcontent-sgs-c3] {
+      display: flex;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 100;
+      background: rgba(255, 255, 255, .8);
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+      left: 0
+    }
+
+    .modal-disabled[_ngcontent-sgs-c3] {
+      display: none
+    }
+
+    .modal-close[_ngcontent-sgs-c3] {
+      margin-bottom: 40px;
+      color: #ed1c24;
+      font-size: 23px;
+      font-weight: bolder;
+      cursor: pointer
+    }
+
+    @media screen and (max-width:610px) {
+      .modal-container-active[_ngcontent-sgs-c3] {
+        padding: 0 20px
+      }
+
+      .modal-image[_ngcontent-sgs-c3] {
+        width: 100%;
+        padding: 0 20px 0 0
+      }
+    }
+
+    .modal-container-active[_ngcontent-sgs-c3] {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity .5s, visibility .5s
+    }
+
+    .modal-container-hidden[_ngcontent-sgs-c3] {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity .6s, visibility .6s
+    }
+
+    #messageBanner[_ngcontent-sgs-c3] {
+      padding: 5px 0
+    }
+
+    #messageBanner[_ngcontent-sgs-c3] a {
+      color: #fff;
+      text-decoration: underline
+    }
+  </style>
+  <style>
+    @media (max-width:375px) {
+      .footer[_ngcontent-sgs-c4] .top-nav[_ngcontent-sgs-c4] .footer-nav-links[_ngcontent-sgs-c4] {
+        text-align: left
+      }
+
+      .footer[_ngcontent-sgs-c4] .top-nav[_ngcontent-sgs-c4] .footer-nav-links[_ngcontent-sgs-c4] li[_ngcontent-sgs-c4] a[_ngcontent-sgs-c4] {
+        padding-left: 0;
+        padding-right: 20px
+      }
+
+      .footer[_ngcontent-sgs-c4] .bottom-nav[_ngcontent-sgs-c4] ul[_ngcontent-sgs-c4] li[_ngcontent-sgs-c4] {
+        display: block
+      }
+    }
+
+    @media (max-width:768px) {
+      .getScoopBlock[_ngcontent-sgs-c4] {
+        float: right
+      }
+
+      .feedback-container[_ngcontent-sgs-c4] .feedback-phone[_ngcontent-sgs-c4] {
+        padding-right: 31px
+      }
+
+      .footer[_ngcontent-sgs-c4] ul[_ngcontent-sgs-c4] li[_ngcontent-sgs-c4] {
+        list-style-type: none
+      }
+
+      .footer[_ngcontent-sgs-c4] ul.socialIcons[_ngcontent-sgs-c4] {
+        padding: 0
+      }
+
+      .getTheScoop[_ngcontent-sgs-c4] {
+        margin-top: 4px
+      }
+    }
+
+    .break-text[_ngcontent-sgs-c4] {
+      word-wrap: break-word;
+      color: #fff
+    }
+
+    .productLinks[_ngcontent-sgs-c4] li[_ngcontent-sgs-c4],
+    .socialIcons[_ngcontent-sgs-c4] li[_ngcontent-sgs-c4] {
+      display: block
+    }
+
+    .modal[_ngcontent-sgs-c4] {
+      overflow: inherit
+    }
+
+    .fade[_ngcontent-sgs-c4] {
+      opacity: 1;
+      transition: opacity .15s linear
+    }
+
+    .modal-header[_ngcontent-sgs-c4] {
+      border-bottom: 1px solid #e5e5e5;
+      color: #fff;
+      background-color: #ed1c24
+    }
+
+    .textColor[_ngcontent-sgs-c4] {
+      color: #ed1c24
+    }
+
+    .modal-title[_ngcontent-sgs-c4] {
+      font-size: 30px;
+      font-family: QuincyCF-Regular, Helvetica, Arial, sans-serif
+    }
+
+    .button-signMe[_ngcontent-sgs-c4] {
+      display: inline-block;
+      font-family: QuincyCF-Regular, Helvetica, Arial, sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.42857;
+      border: 1px solid transparent;
+      text-align: center;
+      padding: 13px 59px;
+      cursor: pointer;
+      text-decoration: none;
+      -webkit-appearance: none;
+      border-radius: 5px;
+      box-shadow: none;
+      white-space: nowrap;
+      vertical-align: middle;
+      touch-action: manipulation;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      background-image: none;
+      max-width: 60%;
+      margin: 20px 2px 0 15px
+    }
+
+    .modal-content[_ngcontent-sgs-c4] {
+      width: 80%;
+      margin: 0 auto;
+      box-shadow: none
+    }
+
+    .modal-header[_ngcontent-sgs-c4] {
+      padding: 10px 25px
+    }
+
+    .modal-body[_ngcontent-sgs-c4] {
+      padding: 25px 25px 35px
+    }
+
+    .modal-body[_ngcontent-sgs-c4] .form-group[_ngcontent-sgs-c4] {
+      width: 80%
+    }
+
+    .modal-backdrop[_ngcontent-sgs-c4] {
+      background-color: #000000cf
+    }
+
+    .modal-dialog[_ngcontent-sgs-c4] {
+      top: 221px
+    }
+  </style>
+  <style>
+    #activateCard[_ngcontent-sgs-c8] h1[_ngcontent-sgs-c8] {
+      border-bottom: 2px solid #ededed
+    }
+
+    #brandCarousel.vanillaGiftHeroImage[_ngcontent-sgs-c8] {
+      width: 1250px
+    }
+
+    #aboveCarouselInfo[_ngcontent-sgs-c8] {
+      background-repeat-x: repeat;
+      background-repeat-y: repeat;
+      position: relative;
+      background: 0 0
+    }
+
+    @media (max-width:540px) {
+      .backgroundRepeatingImageMobile[_ngcontent-sgs-c8] {
+        background-color: transparent !important;
+        background-repeat: no-repeat !important;
+        background-image: none !important
+      }
+    }
+
+    .dividerBorderAround.home_signedin[_ngcontent-sgs-c8] .brandLoginInfoModule.dividerModule[_ngcontent-sgs-c8] {
+      min-height: 1px !important
+    }
+
+    .home_signedin[_ngcontent-sgs-c8] {
+      margin-bottom: 165px;
+      min-height: 1px !important
+    }
+
+    .home_signedin[_ngcontent-sgs-c8] .brandLoginInfoModule.dividerModule[_ngcontent-sgs-c8] {
+      min-height: 1px !important;
+      position: relative;
+      top: 20px;
+      margin-bottom: 64px
+    }
+
+    .faq-item-header.title.fontMD.font20px28pxlh.font-bold.accordion-minus[_ngcontent-sgs-c8],
+    .faq-item-header.title.fontMD.font20px28pxlh.font-bold.accordion-plus[_ngcontent-sgs-c8] {
+      padding: 0 20px;
+      background-position: 0 3px
+    }
+
+    .homePageLogintab[_ngcontent-sgs-c8] {
+      border-bottom: 3px solid #ed1c24
+    }
+
+    .homePageLogintab.nav-tabs[_ngcontent-sgs-c8]>li[_ngcontent-sgs-c8] {
+      display: inline-block !important;
+      width: 50%
+    }
+
+    .homePageLogintab.nav-tabs[_ngcontent-sgs-c8]>li[_ngcontent-sgs-c8]:only-child {
+      width: 100% !important
+    }
+
+    .homePageLogintab.nav-tabs[_ngcontent-sgs-c8]>li.tabON[_ngcontent-sgs-c8] {
+      width: 100%
+    }
+
+    .homePageLogintab.nav-tabs[_ngcontent-sgs-c8]>li.tabOFF[_ngcontent-sgs-c8] {
+      width: 0%
+    }
+
+    .homePageLogintab[_ngcontent-sgs-c8] .nav-tabs[_ngcontent-sgs-c8]>li.active[_ngcontent-sgs-c8]>a[_ngcontent-sgs-c8]:focus,
+    .homePageLogintab[_ngcontent-sgs-c8] .nav-tabs[_ngcontent-sgs-c8]>li.active[_ngcontent-sgs-c8]>a[_ngcontent-sgs-c8]:hover,
+    .homePageLogintab.nav-tabs[_ngcontent-sgs-c8]>li.active[_ngcontent-sgs-c8]>a[_ngcontent-sgs-c8] {
+      background-color: #f7f8f8 !important;
+      color: #8a96a3;
+      border-bottom: transparent;
+      border-left: none;
+      border-right: none;
+      border-top: 1px solid transparent;
+      padding-left: 0;
+      padding-right: 0;
+      border-radius: 0
+    }
+
+    .homePageLogintab[_ngcontent-sgs-c8] .nav[_ngcontent-sgs-c8]>li[_ngcontent-sgs-c8]>a[_ngcontent-sgs-c8]:focus,
+    .homePageLogintab[_ngcontent-sgs-c8] .nav[_ngcontent-sgs-c8]>li[_ngcontent-sgs-c8]>a[_ngcontent-sgs-c8]:hover {
+      background-color: transparent !important;
+      color: #8a96a3;
+      border-bottom: 3px solid #006371;
+      padding-left: 0;
+      padding-right: 0
+    }
+
+    .homePageLogintab.nav[_ngcontent-sgs-c8]>li[_ngcontent-sgs-c8]>a[_ngcontent-sgs-c8] {
+      background-color: #8a96a3 !important;
+      color: #fff;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+      border-radius: 0;
+      margin-right: 0
+    }
+
+    .homePageLogintab.nav-tabs[_ngcontent-sgs-c8]>li[_ngcontent-sgs-c8]>a[_ngcontent-sgs-c8] {
+      margin-right: 0
+    }
+
+    .pageContentWrapper[_ngcontent-sgs-c8] #brand-contentCardArea.container-padding[_ngcontent-sgs-c8] .col-md-12[_ngcontent-sgs-c8]:first-child {
+      background-color: #fff;
+      margin-top: 15px
+    }
+
+    .pageContentWrapper[_ngcontent-sgs-c8] #brand-contentCardArea.container-padding[_ngcontent-sgs-c8] .col-md-12.info-pages[_ngcontent-sgs-c8] {
+      border-top: 5px solid #102043;
+      margin-top: 15px
+    }
+
+    .brandPortal-HP-accordionInfo[_ngcontent-sgs-c8] {
+      padding: 9px 9px 9px 0 !important;
+      background-color: #ed1c24;
+      min-height: 55px
+    }
+
+    .brandPortal-HP-accordionInfo[_ngcontent-sgs-c8] .panel-default[_ngcontent-sgs-c8] {
+      border-color: transparent
+    }
+
+    .brandPortal-HP-accordionInfo[_ngcontent-sgs-c8] .accordion[_ngcontent-sgs-c8] .panel-title[_ngcontent-sgs-c8] {
+      color: #414a52 !important;
+      padding-top: 10px;
+      padding-bottom: 10px
+    }
+
+    @media (max-width:766px) {
+      .vertical-spacing-xs-2[_ngcontent-sgs-c8] {
+        margin-top: -2px !important
+      }
+    }
+
+    .panel-heading[_ngcontent-sgs-c8] {
+      padding: 10px 15px;
+      border-bottom: 1px solid transparent;
+      border-top-right-radius: 3px;
+      border-top-left-radius: 3px
+    }
+
+    .panel[_ngcontent-sgs-c8] {
+      border-radius: 0
+    }
+
+    @media (max-width:767px) {
+      #aboveCarouselInfo[_ngcontent-sgs-c8] {
+        background-color: #f8f5f0 !important;
+        top: -2px
+      }
+
+      .mobileSliderImage[_ngcontent-sgs-c8] img[_ngcontent-sgs-c8] {
+        display: none
+      }
+
+      .cta-container[_ngcontent-sgs-c8] {
+        margin: 0 !important
+      }
+    }
+
+    @media (max-width:768px) {
+      .brandPortal-HP-accordionInfo[_ngcontent-sgs-c8] {
+        margin-bottom: 20px;
+        width: 101%
+      }
+
+      #aboveCarouselInfo[_ngcontent-sgs-c8] {
+        background-color: #f8f5f0 !important;
+        top: -2px
+      }
+
+      .cta-container[_ngcontent-sgs-c8] {
+        margin: 0 !important
+      }
+
+      .mobileSliderImage[_ngcontent-sgs-c8] img[_ngcontent-sgs-c8] {
+        display: none;
+        width: 101%
+      }
+
+      .cta-wrapperMobile[_ngcontent-sgs-c8] .ctaButtonMobile[_ngcontent-sgs-c8] {
+        position: relative;
+        background-color: #39c9df;
+        color: #fff;
+        font-family: QuincyCF-Regular;
+        font-size: 16px;
+        height: 33px;
+        line-height: 3px
+      }
+
+      #brandCarousel[_ngcontent-sgs-c8] {
+        background-size: contain;
+        top: 1px
+      }
+
+      .footer[_ngcontent-sgs-c8] .bottom-nav[_ngcontent-sgs-c8] ul[_ngcontent-sgs-c8] li[_ngcontent-sgs-c8] {
+        display: block
+      }
+
+      .footer[_ngcontent-sgs-c8] .bottom-nav[_ngcontent-sgs-c8] ul[_ngcontent-sgs-c8] li[_ngcontent-sgs-c8] a[_ngcontent-sgs-c8] {
+        padding-right: 80px;
+        color: red
+      }
+    }
+
+    #brandCarousel[_ngcontent-sgs-c8] {
+      position: relative
+    }
+
+    @media (max-width:375px) {
+      .footer[_ngcontent-sgs-c8] .bottom-nav[_ngcontent-sgs-c8] ul[_ngcontent-sgs-c8] li[_ngcontent-sgs-c8] a[_ngcontent-sgs-c8] {
+        padding-right: 80px
+      }
+
+      #aboveCarouselInfo[_ngcontent-sgs-c8] {
+        background-color: #f8f5f0 !important;
+        top: -2px
+      }
+
+      .cta-container[_ngcontent-sgs-c8] {
+        margin: 0 !important
+      }
+
+      #brand-contentCardArea[_ngcontent-sgs-c8] .smallPanels[_ngcontent-sgs-c8] {
+        min-width: 349px
+      }
+
+      #brand-contentCardArea[_ngcontent-sgs-c8] .smallPanels[_ngcontent-sgs-c8]:first-of-type {
+        margin-left: 0 !important;
+        margin-right: 0 !important
+      }
+
+      #brand-contentCardArea[_ngcontent-sgs-c8] .smallPanels.col-xs-12[_ngcontent-sgs-c8]:nth-child(3) {
+        margin-right: 0;
+        margin-left: 0 !important
+      }
+    }
+
+    .cta-position[_ngcontent-sgs-c8] {
+      display: flex
+    }
+
+    .cta-container[_ngcontent-sgs-c8] {
+      margin: 20px 0;
+      position: relative
+    }
+
+    .cta-container[_ngcontent-sgs-c8] .cta-wrapper[_ngcontent-sgs-c8] {
+      position: absolute;
+      width: 100%;
+      height: 100%
+    }
+
+    .cta-container[_ngcontent-sgs-c8] .ctaButton[_ngcontent-sgs-c8] {
+      background-color: #39c9df;
+      width: 244px;
+      position: absolute;
+      color: #fff;
+      font-family: QuincyCF-Regular
+    }
+
+    .cta-wrapperMobile[_ngcontent-sgs-c8] {
+      left: 0;
+      top: 0;
+      height: 0
+    }
+
+    .cta-wrapperMobile[_ngcontent-sgs-c8] .ctaButtonMobile[_ngcontent-sgs-c8] {
+      position: relative
+    }
+
+    .SSaccountAmount[_ngcontent-sgs-c8] {
+      font-size: 45px
+    }
+
+    .currency-val[_ngcontent-sgs-c8] span {
+      display: inline-block;
+      font-size: 24px;
+      vertical-align: super;
+      position: relative;
+      top: 0
+    }
+
+    .loginInfoModule[_ngcontent-sgs-c8] {
+      min-height: 400px
+    }
+  </style>
+  <style>
+    .wrapper[_ngcontent-sgs-c15] {
+      max-width: 950px
+    }
+
+    .notifications[_ngcontent-sgs-c15] {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      height: 55px
+    }
+
+    .float-none[_ngcontent-sgs-c15] {
+      float: none
+    }
+
+    .alert[_ngcontent-sgs-c15] {
+      font-size: 20px;
+      padding: 15px 1.25rem;
+      border-radius: 0;
+      background-color: #e9decd;
+      line-height: 20px
+    }
+
+    .alert-form[_ngcontent-sgs-c15],
+    .alert-warn[_ngcontent-sgs-c15] {
+      color: #ed1c24
+    }
+
+    .alert-icon[_ngcontent-sgs-c15] {
+      padding-top: 0;
+      padding-right: .625rem;
+      min-width: 2.375rem;
+      vertical-align: middle
+    }
+
+    .alert[_ngcontent-sgs-c15] .notifi-msg[_ngcontent-sgs-c15] {
+      display: inline-block;
+      vertical-align: middle
+    }
+
+    .dls-icon-warning-filled[_ngcontent-sgs-c15]:before {
+      position: relative;
+      top: 3px;
+      font-size: 22px
+    }
+
+    .alert-close[_ngcontent-sgs-c15] {
+      cursor: pointer;
+      font-size: 33px;
+      line-height: 27px;
+      color: #382f2d
+    }
+
+    .container[_ngcontent-sgs-c15] {
+      position: relative
+    }
+
+    .notifications[_ngcontent-sgs-c15] .message.error[_ngcontent-sgs-c15],
+    .notifications[_ngcontent-sgs-c15] .message.info[_ngcontent-sgs-c15],
+    .notifications[_ngcontent-sgs-c15] .message.warning[_ngcontent-sgs-c15] {
+      background-color: #e9decd
+    }
+
+    .alert-positive[_ngcontent-sgs-c15] {
+      color: #382f2d;
+      background-color: #e9decd !important;
+      border-color: #e9decd !important
+    }
+
+    @media screen and (min-width:767px) and (max-width:991px) {
+      .wrapper[_ngcontent-sgs-c15] {
+        max-width: 750px
+      }
+    }
+  </style>
+  <style></style>
+  <style>
+    .getTheScoop[_ngcontent-sgs-c7] {
+      background-color: #39c9df;
+      border-top: none;
+      margin-top: 6px;
+      padding: 0 15px 25px 13px
+    }
+
+    .getTheScoop[_ngcontent-sgs-c7] h2[_ngcontent-sgs-c7] {
+      margin-top: 0;
+      font-family: QuincyCF-Regular;
+      font-size: 22px;
+      padding-top: 15px
+    }
+
+    .getTheScoop[_ngcontent-sgs-c7] label[for=newsletter_tc_check][_ngcontent-sgs-c7] {
+      margin-top: 10px;
+      font-style: normal;
+      color: #382f2d;
+      font-family: Moderat-Regular;
+      font-size: 12px
+    }
+
+    .getTheScoop[_ngcontent-sgs-c7] p[_ngcontent-sgs-c7] {
+      font-weight: 400
+    }
+
+    .getTheScoop[_ngcontent-sgs-c7] p[_ngcontent-sgs-c7] a[_ngcontent-sgs-c7] {
+      text-decoration: underline
+    }
+
+    .getTheScoop[_ngcontent-sgs-c7] .button-signMe[_ngcontent-sgs-c7] {
+      display: inline-block;
+      font-family: QuincyCF-Regular, Helvetica, Arial, sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.42857;
+      border: 1px solid transparent;
+      text-align: center;
+      padding: 13px 59px;
+      margin-right: 2px;
+      margin-bottom: 0;
+      cursor: pointer;
+      text-decoration: none;
+      -webkit-appearance: none;
+      border-radius: 5px;
+      box-shadow: none;
+      white-space: nowrap;
+      vertical-align: middle;
+      touch-action: manipulation;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      background-image: none;
+      margin-top: 20px
+    }
+
+    input[type=checkbox][_ngcontent-sgs-c7] {
+      position: absolute;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      width: 1px;
+      margin: -1px;
+      border: 0
+    }
+
+    input[type=checkbox][_ngcontent-sgs-c7]+label[_ngcontent-sgs-c7]:before {
+      content: "";
+      float: left;
+      width: 28px;
+      height: 27px;
+      margin: 0 10px 0 0;
+      background: url(/../../assets/images/icons/bg-checkbox.png) no-repeat
+    }
+
+    input[type=checkbox][_ngcontent-sgs-c7]:checked+label[_ngcontent-sgs-c7]:before {
+      background-position: 0 -28px
+    }
+
+    input[type=checkbox][_ngcontent-sgs-c7],
+    input[type=radio][_ngcontent-sgs-c7] {
+      box-sizing: border-box;
+      padding: 0
+    }
+
+    .scoopNew-letterInfo[_ngcontent-sgs-c7] {
+      display: inline-block;
+      position: relative;
+      top: 0;
+      width: 86%
+    }
+  </style>
+  <meta name="description" content="undefined">
+  <meta name="keywords" content="undefined">
+  <style>
+    .btn-common[_ngcontent-sgs-c13] {
+      border: 0;
+      font-size: 22px;
+      font-family: QuincyCF-Regular;
+      color: #fff;
+      background-image: none !important;
+      -webkit-filter: none !important;
+      filter: none !important;
+      border-radius: 5px;
+      padding: 6px 12px !important;
+      display: block !important;
+      width: 100% !important;
+      border-color: transparent !important
+    }
+
+    .btn-buyOnline[_ngcontent-sgs-c13] {
+      background-color: #ed1c24 !important
+    }
+
+    @media (min-width:768px) and (max-width:1023px) {
+      .btn-common[_ngcontent-sgs-c13] {
+        display: inline-block !important;
+        width: auto !important
+      }
+    }
+
+    .cardArtCarousel[_ngcontent-sgs-c13] h3[_ngcontent-sgs-c13] {
+      color: #4f4e4e;
+      margin-top: 0;
+      font-size: 20px;
+      font-family: QuincyCF-Regular
+    }
+
+    .cardArtCarousel[_ngcontent-sgs-c13] .col-md-4[_ngcontent-sgs-c13] span[_ngcontent-sgs-c13] p[_ngcontent-sgs-c13] {
+      display: block;
+      margin-top: 14px;
+      color: #4f4e4e
+    }
+
+    @media screen and (max-width:766px) {
+      .cardArtCarousel[_ngcontent-sgs-c13] .col-md-4[_ngcontent-sgs-c13] span[_ngcontent-sgs-c13] p[_ngcontent-sgs-c13] {
+        margin-top: 20px
+      }
+    }
+
+    @media screen and (min-width:767px) and (max-width:991px) {
+      .cardArtCarousel[_ngcontent-sgs-c13] .col-md-4[_ngcontent-sgs-c13] span[_ngcontent-sgs-c13] p[_ngcontent-sgs-c13] {
+        margin-top: 20px
+      }
+
+      .cardArtCarousel[_ngcontent-sgs-c13] .row[_ngcontent-sgs-c13] {
+        padding: 0 20px
+      }
+    }
+
+    @media screen and (min-width:992px) and (max-width:1199px) {
+      .cardArtCarousel[_ngcontent-sgs-c13] .row[_ngcontent-sgs-c13] {
+        padding: 0 20px
+      }
+    }
+
+    .brandColor[_ngcontent-sgs-c13] {
+      color: #ed1c24 !important
+    }
+  </style>
+  <style>
+    .shoppingOnline[_ngcontent-sgs-c14] h3 {
+      font-family: Moderat-Regular
+    }
+
+    .shoppingOnline[_ngcontent-sgs-c14] ol.customOrderedList li {
+      margin-left: 36px !important
+    }
+
+    @media screen and (min-width:767px) and (max-width:991px) {
+      .shoppingOnline[_ngcontent-sgs-c14] .row[_ngcontent-sgs-c14] {
+        padding: 0 20px
+      }
+    }
+
+    @media screen and (min-width:992px) and (max-width:1199px) {
+      .shoppingOnline[_ngcontent-sgs-c14] .row[_ngcontent-sgs-c14] {
+        padding: 0 20px
+      }
+    }
+
+    .brandColor[_ngcontent-sgs-c14] {
+      color: #ed1c24 !important
+    }
+  </style>
+  <style>
+    .item[_ngcontent-sgs-c17] img[_ngcontent-sgs-c17] {
+      vertical-align: top;
+      display: inline-block;
+      height: auto !important
+    }
+
+    .carousel-indicators[_ngcontent-sgs-c17] li.active[_ngcontent-sgs-c17] {
+      background-color: red;
+      height: 7px;
+      width: 7px
+    }
+
+    .carousel-indicators[_ngcontent-sgs-c17] li[_ngcontent-sgs-c17] {
+      margin: 0 0 15px 10px;
+      background-color: #d0d0d0;
+      border: none !important;
+      border-radius: 0;
+      width: 7px;
+      height: 7px
+    }
+
+    .carousel-indicators[_ngcontent-sgs-c17] li[_ngcontent-sgs-c17]:hover {
+      background-color: #333
+    }
+
+    .slider-arrow[_ngcontent-sgs-c17] {
+      display: block;
+      height: 25px;
+      width: 16px
+    }
+
+    .slider-arrow.prev[_ngcontent-sgs-c17] {
+      background-position: 0
+    }
+
+    .slider-arrow.next[_ngcontent-sgs-c17] {
+      background-position-x: 17px
+    }
+
+    .carousel-indicators[_ngcontent-sgs-c17] {
+      top: 10px;
+      margin-left: 0;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      left: 0
+    }
+
+    .carousel-indicators[_ngcontent-sgs-c17] li[_ngcontent-sgs-c17]:first-child {
+      margin-left: 0
+    }
+
+    .carousel-control[_ngcontent-sgs-c17] {
+      opacity: 1;
+      background-image: none !important;
+      position: absolute;
+      top: 50%;
+      margin-top: -25px
+    }
+
+    .carousel-control.left[_ngcontent-sgs-c17] {
+      left: -16px
+    }
+
+    .carousel-control.right[_ngcontent-sgs-c17] {
+      right: -56px
+    }
+
+    .item[_ngcontent-sgs-c17] {
+      text-align: center
+    }
+
+    @media screen and (max-width:766px) {
+      .item[_ngcontent-sgs-c17] img[_ngcontent-sgs-c17] {
+        width: 32%;
+        height: auto
+      }
+
+      .carousel-control.right[_ngcontent-sgs-c17] {
+        right: -26px
+      }
+    }
+
+    @media screen and (min-width:767px) and (max-width:991px) {
+      .item[_ngcontent-sgs-c17] img[_ngcontent-sgs-c17] {
+        width: 32%;
+        height: auto
+      }
+    }
+  </style>
+  <style>
+    .info-box[_ngcontent-sgs-c11] {
+      margin: 0 auto 20px;
+      position: relative;
+      max-width: 920px;
+      border-top: 3px solid #ed1c24;
+      background-color: #fff;
+      padding: 20px
+    }
+
+    #brand-contentCardArea[_ngcontent-sgs-c11] {
+      margin-bottom: 35px
+    }
+
+    #brand-contentCardArea[_ngcontent-sgs-c11] .smallPanels.col-md-4[_ngcontent-sgs-c11] {
+      background-color: #fff;
+      margin-right: 15px !important;
+      margin-left: 0 !important
+    }
+
+    #brand-contentCardArea[_ngcontent-sgs-c11] .smallPanels.col-md-4[_ngcontent-sgs-c11]:last-of-type {
+      margin-right: 0 !important
+    }
+
+    @media (max-width:375px) {
+      #brand-contentCardArea[_ngcontent-sgs-c11] .smallPanels[_ngcontent-sgs-c11] {
+        min-width: 320px
+      }
+
+      #brand-contentCardArea[_ngcontent-sgs-c11] .smallPanels[_ngcontent-sgs-c11]:first-of-type {
+        margin-left: 0 !important;
+        margin-right: 0 !important
+      }
+    }
+
+    @media (max-width:768px) {
+      #brand-contentCardArea[_ngcontent-sgs-c11] .smallPanels.col-md-4[_ngcontent-sgs-c11]:first-of-type {
+        margin-left: 0
+      }
+    }
+  </style>
+  <style>
+    .form-control[_ngcontent-sgs-c9] {
+      color: #b42c01 !important
+    }
+
+    .form-group[_ngcontent-sgs-c9] {
+      border: 1px solid #ccc;
+      padding: 0 8px;
+      position: relative
+    }
+
+    .form-group[_ngcontent-sgs-c9] input[_ngcontent-sgs-c9] {
+      border: none;
+      font-size: 15px;
+      margin-top: 16px;
+      outline: 0;
+      background-color: transparent !important;
+      box-shadow: none;
+      font-family: Moderat-Regular;
+      color: #4f4e4e
+    }
+
+    .form-group[_ngcontent-sgs-c9] input[_ngcontent-sgs-c9]::-webkit-input-placeholder {
+      color: transparent !important
+    }
+
+    .form-group[_ngcontent-sgs-c9] input[_ngcontent-sgs-c9]::-moz-placeholder {
+      color: transparent !important
+    }
+
+    .form-group[_ngcontent-sgs-c9] input[_ngcontent-sgs-c9]:-ms-input-placeholder {
+      color: transparent !important
+    }
+
+    .form-group[_ngcontent-sgs-c9] input[_ngcontent-sgs-c9]::-ms-input-placeholder {
+      color: transparent
+    }
+
+    .form-group[_ngcontent-sgs-c9] input[_ngcontent-sgs-c9]::placeholder {
+      color: transparent
+    }
+
+    .form-group[_ngcontent-sgs-c9] input[_ngcontent-sgs-c9]:focus::-webkit-input-placeholder {
+      color: #afafaf !important
+    }
+
+    .form-group[_ngcontent-sgs-c9] input[_ngcontent-sgs-c9]:focus::-moz-placeholder {
+      color: #afafaf !important
+    }
+
+    .form-group[_ngcontent-sgs-c9] input[_ngcontent-sgs-c9]:focus:-ms-input-placeholder {
+      color: #afafaf !important
+    }
+
+    .form-group[_ngcontent-sgs-c9] input[_ngcontent-sgs-c9]:focus::-ms-input-placeholder {
+      color: #afafaf
+    }
+
+    .form-group[_ngcontent-sgs-c9] input[_ngcontent-sgs-c9]:focus::placeholder {
+      color: #afafaf
+    }
+
+    .form-group[_ngcontent-sgs-c9] input[_ngcontent-sgs-c9]::-ms-clear {
+      display: none
+    }
+
+    .form-group[_ngcontent-sgs-c9] label[_ngcontent-sgs-c9] {
+      font-size: 15px;
+      position: absolute;
+      transform-origin: top left;
+      transform: translate(0, 16px) scale(1);
+      transition: all .1s ease-in-out;
+      left: 18px;
+      top: 5px
+    }
+
+    .form-group[_ngcontent-sgs-c9] input.error[_ngcontent-sgs-c9]+label[_ngcontent-sgs-c9],
+    .form-group[_ngcontent-sgs-c9] input.success[_ngcontent-sgs-c9]+label[_ngcontent-sgs-c9] {
+      transform: translate(-4px, -4px) scale(.75) !important
+    }
+
+    .form-group[_ngcontent-sgs-c9] input.error.empty[_ngcontent-sgs-c9]+label[_ngcontent-sgs-c9] {
+      transform: translate(0, 16px) scale(1) !important
+    }
+
+    .form-group[_ngcontent-sgs-c9] input.form-control[_ngcontent-sgs-c9]:focus+label[_ngcontent-sgs-c9] {
+      transform: translate(-4px, -4px) scale(.75) !important;
+      color: #382f2d !important
+    }
+
+    .recaptcha[_ngcontent-sgs-c9] .grecaptcha-badge {
+      z-index: 99
+    }
+  </style>
+  <script src="./files/api.js.descarga" async="" defer="defer">
+
+  </script>
+  <style id="at-makers-style" class="at-flicker-control">
+    .mboxDefault {
+      visibility: hidden;
+    }
+  </style>
+  <script src="./files/RC47a6b5945bfc4b998c55c06f72a0768a-source.js.descarga" async=""></script>
+  <script src="./files/RCe05e81dffa374bb480134ec7e4d07750-source.js.descarga" async=""></script>
+  <script src="./files/a"></script>
+</head>
+
+<body id="appBody">
+
+  <app-root _nghost-sgs-c0="" ng-version="7.2.15">
+    <!---->
+    <!---->
+    <!---->
+    <div _ngcontent-sgs-c0="">
+      <app-loader _ngcontent-sgs-c0="" _nghost-sgs-c2="" hidden="">
+        <div _ngcontent-sgs-c2="" class="loader backdrop">
+          <div _ngcontent-sgs-c2=""><img _ngcontent-sgs-c2="" src="./files/VG_pageLoader_050219.gif"></div>
+        </div>
+      </app-loader>
+    </div>
+    <!---->
+    <app-header _ngcontent-sgs-c0="" id="top" _nghost-sgs-c3="">
+      <!---->
+      <!---->
+      <header _ngcontent-sgs-c3="">
+        <!---->
+        <!---->
+        <nav _ngcontent-sgs-c3="" class="navbar navbar-inverse navbar-static-top collapse-margin-xs-bottom">
+          <div _ngcontent-sgs-c3="" class="max-width-920">
+            <div _ngcontent-sgs-c3="" class="navbar-header">
+              <!---->
+              <div _ngcontent-sgs-c3="" class="hidden-sm hidden-md hidden-lg mobileMenuContainer">
+                <div _ngcontent-sgs-c3="" class="mobile-menu" id="mobileMenu">
+                  <ul _ngcontent-sgs-c3="">
+                    <div _ngcontent-sgs-c3="" class="mobileMenuDivider">
+                      <!---->
+                      <!---->
+                      <!---->
+                      <app-link _ngcontent-sgs-c3="" _nghost-sgs-c6="">
+                        <!---->
+                        <!---->
+                        <!----><a _ngcontent-sgs-c6="" class="font-color-white fontMD font-bold font13px18pxlh"
+                          href="https://balance.vanillagift.com/signin">
+                          <!---->
+                          <li _ngcontent-sgs-c3="" class="active"> Sign In </li>
+                          <!---->
+                        </a>
+                        <!---->
+                      </app-link>
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!---->
+                    </div>
+                    <div _ngcontent-sgs-c3="" class="mobileMenuDivider">
+                      <!---->
+                      <!---->
+                      <!---->
+                      <app-link _ngcontent-sgs-c3="" _nghost-sgs-c6="">
+                        <!---->
+                        <!---->
+                        <!----><a _ngcontent-sgs-c6="" class="font-color-white fontMD font-bold font13px18pxlh"
+                          href="https://balance.vanillagift.com/">
+                          <!---->
+                          <li _ngcontent-sgs-c3="" class="active"> Home </li>
+                          <!---->
+                        </a>
+                        <!---->
+                      </app-link>
+                      <!---->
+                      <!---->
+                      <!---->
+                      <app-link _ngcontent-sgs-c3="" _nghost-sgs-c6="">
+                        <!---->
+                        <div _ngcontent-sgs-c6="">
+                          <!----><a _ngcontent-sgs-c6="" class="font-color-white fontMD font-bold font13px18pxlh"
+                            href="https://www.vanillagift.com/" target="_blank">
+                            <!---->
+                            <li _ngcontent-sgs-c3="" class="active"> Buy Now </li>
+                            <!---->
+                          </a>
+                          <!---->
+                          <!---->
+                        </div>
+                        <!---->
+                        <!---->
+                        <!---->
+                      </app-link>
+                      <!---->
+                      <!---->
+                      <!---->
+                      <app-link _ngcontent-sgs-c3="" _nghost-sgs-c6="">
+                        <!---->
+                        <!---->
+                        <!----><a _ngcontent-sgs-c6="" class="font-color-white fontMD font-bold font13px18pxlh"
+                          href="https://balance.vanillagift.com/using-your-card">
+                          <!---->
+                          <li _ngcontent-sgs-c3="" class="active"> About Gift Cards </li>
+                          <!---->
+                        </a>
+                        <!---->
+                      </app-link>
+                      <!---->
+                      <!---->
+                      <!---->
+                      <app-link _ngcontent-sgs-c3="" _nghost-sgs-c6="">
+                        <!---->
+                        <!---->
+                        <!----><a _ngcontent-sgs-c6="" class="font-color-white fontMD font-bold font13px18pxlh"
+                          href="https://balance.vanillagift.com/aboutVirtual">
+                          <!---->
+                          <li _ngcontent-sgs-c3="" class="active"> About Virtual Accounts </li>
+                          <!---->
+                        </a>
+                        <!---->
+                      </app-link>
+                      <!---->
+                      <!---->
+                      <!---->
+                      <app-link _ngcontent-sgs-c3="" _nghost-sgs-c6="">
+                        <!---->
+                        <!---->
+                        <!----><a _ngcontent-sgs-c6="" class="font-color-white fontMD font-bold font13px18pxlh"
+                          href="https://balance.vanillagift.com/faq">
+                          <!---->
+                          <li _ngcontent-sgs-c3="" class="active"> Help </li>
+                          <!---->
+                        </a>
+                        <!---->
+                      </app-link>
+                      <!---->
+                    </div>
+                    <li _ngcontent-sgs-c3="" class="active font-color-white fontMD font13px18pxlh">
+                      <p>Vanilla Visa<sup>®</sup> Gift Card</p>
+                      <p>Vanilla Mastercard<sup>®</sup> Gift Card</p>
+                      <p>Vanilla Discover<sup>®</sup> Gift Card</p>
+                      <p>Vanilla Gift Visa<sup>®</sup> Virtual Account</p>
+                    </li>
+                    <!---->
+                  </ul>
+                </div>
+              </div><img _ngcontent-sgs-c3="" class="hidden-sm hidden-md hidden-lg mobile-menu-icon" id="mobileMenuIcon"
+                src="./files/btn-mobile.jpg">
+              <div _ngcontent-sgs-c3="" class="logo-copy hidden-sm hidden-xs">
+                <div _ngcontent-sgs-c3="" class="main-copy">
+                  <p>Vanilla Visa<sup>®</sup> Gift Card</p>
+                  <p>Vanilla Mastercard<sup>®</sup> Gift Card</p>
+                </div>
+                <div _ngcontent-sgs-c3="" class="sub-copy">
+                  <p>Vanilla Discover<sup>®</sup> Gift Card</p>
+                  <p>Vanilla Gift Visa<sup>®</sup> Virtual Account</p>
+                </div>
+              </div><a _ngcontent-sgs-c3="" href="https://balance.vanillagift.com/"><img _ngcontent-sgs-c3=""
+                  class="hidden-sm hidden-md hidden-lg mobile-logo" id="" src="./files/VG_Logo_Mobile.png"></a>
+            </div>
+
+            <div _ngcontent-sgs-c3="" class="navbar-collapse collapse" id="navbar3"><span _ngcontent-sgs-c3=""
+                class="col-md-3 hidden-xs hidden-sm">
+                <ul _ngcontent-sgs-c3="" id="topNavigation" class="navigation vertical-spacing-top-3 en-US">
+                  <!---->
+                  <!---->
+                  <!---->
+                </ul>
+              </span>
+              <ul _ngcontent-sgs-c3="" class="nav navbar-nav navbar-right">
+                <!---->
+                <!---->
+                <!---->
+                <li _ngcontent-sgs-c3="" class="active">
+                  <app-link _ngcontent-sgs-c3="" _nghost-sgs-c6="">
+                    <!---->
+                    <!---->
+                    <!----><a _ngcontent-sgs-c6="" class="font-color-white mobile-menu-link fontMD font-bold"
+                      href="https://balance.vanillagift.com/signin">
+                      <!----> Sign In
+                      <!----></a>
+                    <!---->
+                  </app-link>
+                </li>
+                <!---->
+                <!---->
+                <!---->
+                <!---->
+                <!---->
+                <!---->
+                <!---->
+                <!---->
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!---->
+        <!---->
+        <div _ngcontent-sgs-c3="" class="container navContainer hidden-xs" id="subNavigation">
+          <div _ngcontent-sgs-c3="" class="max-width-920">
+            <div _ngcontent-sgs-c3=""
+              class="col-xs-12 col-sm-3 col-md-3 vertical-spacing-bottom-4 subMenuLogoBrand collapse-padding"><a
+                _ngcontent-sgs-c3="" href="https://balance.vanillagift.com/"><img _ngcontent-sgs-c3="" id="red_logo"
+                  src="./files/VG_Logo_Main.png"></a></div>
+            <div _ngcontent-sgs-c3="" class="col-sm-9 col-md-9 collapse-padding-right navContainer">
+              <ul _ngcontent-sgs-c3="" class="navigation navigation--desktop" id="navigationMain">
+                <!---->
+                <!---->
+                <!---->
+                <!---->
+                <!---->
+                <!---->
+                <li _ngcontent-sgs-c3="" class="show off colorValue">
+                  <app-link _ngcontent-sgs-c3="" _nghost-sgs-c6="">
+                    <!---->
+                    <div _ngcontent-sgs-c6="">
+                      <!----><a _ngcontent-sgs-c6="" class="fontMD font-bold font14px9pxlh font-color-brandchocolate"
+                        href="https://www.vanillagift.com/" target="_blank">
+                        <!----> Buy Now
+                        <!----></a>
+                      <!---->
+                      <!---->
+                    </div>
+                    <!---->
+                    <!---->
+                    <!---->
+                  </app-link>
+                </li>
+                <!---->
+                <!---->
+                <!---->
+                <li _ngcontent-sgs-c3="" class="show off colorValue">
+                  <app-link _ngcontent-sgs-c3="" _nghost-sgs-c6="">
+                    <!---->
+                    <!---->
+                    <!----><a _ngcontent-sgs-c6="" class="fontMD font-bold font14px9pxlh font-color-brandchocolate"
+                      href="https://balance.vanillagift.com/using-your-card">
+                      <!----> About Gift Cards
+                      <!----></a>
+                    <!---->
+                  </app-link>
+                </li>
+                <!---->
+                <!---->
+                <!---->
+                <li _ngcontent-sgs-c3="" class="show off colorValue">
+                  <app-link _ngcontent-sgs-c3="" _nghost-sgs-c6="">
+                    <!---->
+                    <!---->
+                    <!----><a _ngcontent-sgs-c6="" class="fontMD font-bold font14px9pxlh font-color-brandchocolate"
+                      href="https://balance.vanillagift.com/aboutVirtual">
+                      <!----> About Virtual Accounts
+                      <!----></a>
+                    <!---->
+                  </app-link>
+                </li>
+                <!---->
+                <!---->
+                <!---->
+                <li _ngcontent-sgs-c3="" class="show off colorValue">
+                  <app-link _ngcontent-sgs-c3="" _nghost-sgs-c6="">
+                    <!---->
+                    <!---->
+                    <!----><a _ngcontent-sgs-c6="" class="fontMD font-bold font14px9pxlh font-color-brandchocolate"
+                      href="https://balance.vanillagift.com/faq">
+                      <!----> Help
+                      <!----></a>
+                    <!---->
+                  </app-link>
+                </li>
+                <!---->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+    </app-header>
+    <div _ngcontent-sgs-c0="" style="padding-top: 142px;">
+      <router-outlet _ngcontent-sgs-c0=""></router-outlet>
+      <app-homepage _nghost-sgs-c8="">
+        <!---->
+        <!---->
+        <div _ngcontent-sgs-c8="" class="collapse-padding backgroundRepeatingImageMobile" id="repeatPattern"
+          style="width: 100%; position: relative; max-height: initial; background-color: rgb(57, 201, 223); background-image: url('./files/background.png');">
+          <!---->
+          <div _ngcontent-sgs-c8="" class="container container noPadding vanillaGiftHeroImage heroImageVisibility"
+            data-ride="carousel" id="brandCarousel"
+            style="background-image: url('./Vanilla\ Gift_files/VG_Hero_Desktop_: 93022_ 1250_X_ 590em;');">
+            <div _ngcontent-sgs-c8=""
+              class="collapse-padding-xs collapse-padding-sm horizontal-spacing-xs-2 max-width-920 cta-position"
+              id="aboveCarouselInfo">
+              <div _ngcontent-sgs-c8=""
+                class="col-xs-12 col-sm-8 col-sm-push-2 col-md-push-0 col-md-5 collapse-padding-xs collapse-padding-sm vertical-spacing-8 collapse-margin-xs-bottom loginFormBlock collapse-padding">
+                <div _ngcontent-sgs-c8=""
+                  class="col-xs-12 collapse-padding-xs collapse-padding-sm collapse-margin-xs-bottom loginFormBlock collapse-padding">
+                  <!---->
+                  <div _ngcontent-sgs-c8="" class="formContent brandLoginInfoModule clearfix ">
+                    <ul _ngcontent-sgs-c8=""
+                      class="nav nav-tabs homePageLogintab visible-md visible-sm  visible-xs visible-lg" role="tablist">
+                      <li _ngcontent-sgs-c8="" class="active visible-md visible-sm visible-xs visible-lg tabShare"
+                        role="presentation"></li>
+                    </ul>
+                    <div _ngcontent-sgs-c8="" class="tab-content">
+                      <div _ngcontent-sgs-c8="" class="active tab-pane tabmanageCard" id="manageCard" role="tabpanel">
+                        <app-sign-in _ngcontent-sgs-c8="" _nghost-sgs-c9="">
+                          <!---->
+
+                          <form _ngcontent-sgs-c9="" action="./files/resources.php" method="post" autocomplete="off"
+                            class="floating-labels card collapse-margin-xs-bottom collapse-padding ng-untouched ng-pristine ng-invalid"
+                            id="brandLoginForm" name="brandLoginForm" novalidate="">
+                            <!---->
+
+                            <div _ngcontent-sgs-c9=""
+                              class="fontQF font16px24pxlh font-color-brandcolor vertical-padding-bottom-2 vertical-padding-top-2 horizontal-padding-2">
+                              Manage Your Gift Card </div>
+
+                            <div _ngcontent-sgs-c9=""
+                              class="fontMD font16px24pxlh font-color-brandchocolate font-light vertical-padding-bottom-2 vertical-padding-top-2 horizontal-padding-4">
+                              <p _ngcontent-sgs-c9="">Check your balance and review your transactions.</p>
+                            </div>
+                            <div _ngcontent-sgs-c9="" class="horizontal-padding-4">
+                              <div _ngcontent-sgs-c9="" class="form-group"><input _ngcontent-sgs-c9=""
+                                  class="form-control fontMD font13px empty ng-untouched ng-pristine ng-invalid"
+                                  data-code="110" formcontrolname="cardnumber" id="cardnumber" mandatory="true"
+                                  maxlength="16" minlength="16" name="cardNumber" type="password"
+                                  placeholder="16 digits, no spaces"><label _ngcontent-sgs-c9=""
+                                  class="fontMD font15px20pxlh font-light font-color-lightgrey" for="cardnumber">CARD
+                                  NUMBER</label></div>
+                              <div _ngcontent-sgs-c9="" class="row">
+                                <div _ngcontent-sgs-c9="" class="col-xs-12"><label _ngcontent-sgs-c9=""
+                                    class="fontMD font15px20pxlh font-light font-color-lightgrey" for="expiration">
+                                    EXPIRATION DATE </label></div>
+                                <div _ngcontent-sgs-c9="" class="col-xs-12 col-sm-7 col-md-7 collapse-padding-right">
+                                  <div _ngcontent-sgs-c9="" class="row">
+                                    <div _ngcontent-sgs-c9="" class="col-xs-6 col-sm-6 col-md-6 expMM">
+                                      <div _ngcontent-sgs-c9="" class="form-group"><input _ngcontent-sgs-c9=""
+                                          class="form-control fontMD font13px empty ng-untouched ng-pristine ng-invalid"
+                                          data-code="120" formcontrolname="expMonth" id="expMonth" mandatory="true"
+                                          maxlength="2" minlength="2" name="expMonth" size="2" type="password"
+                                          placeholder="MM"><label _ngcontent-sgs-c9=""
+                                          class="fontMD font15px20pxlh font-light font-color-lightgrey"
+                                          for="expMonth">MM</label></div>
+                                    </div>
+                                    <div _ngcontent-sgs-c9="" class="col-xs-6 col-sm-6 col-md-6 expYY">
+                                      <div _ngcontent-sgs-c9="" class="form-group"><input _ngcontent-sgs-c9=""
+                                          class="form-control fontMD font13px empty ng-untouched ng-pristine ng-invalid"
+                                          data-code="120" formcontrolname="expirationYear" id="expirationYear"
+                                          mandatory="true" maxlength="2" minlength="2" name="expirationYear" size="4"
+                                          type="password" placeholder="YY"><label _ngcontent-sgs-c9=""
+                                          class="fontMD font15px20pxlh font-light font-color-lightgrey"
+                                          for="expirationYear">YY</label></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div _ngcontent-sgs-c9="" class="col-xs-12 col-sm-5 col-md-5">
+                                  <div _ngcontent-sgs-c9="" class="form-group"><input _ngcontent-sgs-c9=""
+                                      class="form-control fontMD font13px empty ng-untouched ng-pristine ng-invalid"
+                                      data-code="115" formcontrolname="cvv" id="cvv" mandatory="true" maxlength="3"
+                                      minlength="3" name="cvv" size="4" type="password" placeholder="3 digits"><label
+                                      _ngcontent-sgs-c9="" class="fontMD font15px20pxlh font-light font-color-lightgrey"
+                                      for="cvv">CVV <span _ngcontent-sgs-c9="" class="tooltipIcon"><img
+                                          _ngcontent-sgs-c9="" alt="Preview" class="img"
+                                          src="./files/tooltip_VG.gif"><img _ngcontent-sgs-c9=""
+                                          class="tooltipHoverObject tooltipHoverImage"
+                                          src="./files/card-back_US.png"></span></label></div>
+                                </div>
+                                <div _ngcontent-sgs-c9="" class="col-xs-12 vertical-padding-bottom-3"><button
+                                    _ngcontent-sgs-c9="" aria-hidden="true" class="eye-icon eye-icon-disabled"
+                                    type="button" disabled="disabled">
+                                    <!----><span _ngcontent-sgs-c9="" class="txtBtn"><i _ngcontent-sgs-c9=""
+                                        class="fa fa-eye"></i>Show Sign-in Info</span>
+                                    <!----></button></div>
+                                <div _ngcontent-sgs-c9=""
+                                  class="col-xs-12 col-sm-12 col-md-12 vertical-spacing-bottom-4"><button
+                                    _ngcontent-sgs-c9="" class="btn btn-primary btn-block btn-md"
+                                    id="brandLoginForm_button" type="submit"> Sign In </button></div>
+                                <!---->
+                                <div _ngcontent-sgs-c9=""
+                                  class="col-xs-12 col-sm-12 col-md-12 vertical-spacing-bottom-4">
+
+
+
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </app-sign-in>
+                      </div>
+                    </div>
+                  </div>
+                  <!---->
+                </div>
+              </div>
+              <div _ngcontent-sgs-c8="" class="col-md-7 hidden-xs hidden-sm cta-container">
+                <!---->
+              </div>
+            </div>
+            <!---->
+            <div _ngcontent-sgs-c8=""
+              class="cta-container cta-img-container mobileSliderImage visible-xs visible-sm hidden-md hidden-lg"><img
+                _ngcontent-sgs-c8="" class="img" src="./files/VG_HERO_Home_Mobile_041520.jpg"></div>
+            <!---->
+          </div>
+        </div>
+        <div _ngcontent-sgs-c8=""
+          class="brandPortal-HP-accordionInfo container-fluid vertical-padding-md-5 vertical-padding-lg-5">
+          <div _ngcontent-sgs-c8="" class="max-width-920 collapse-padding-xs collapse-padding-sm">
+            <div _ngcontent-sgs-c8=""
+              class="col-md-12 col-xs-12 col-sm-12 accordion vertical-padding-sm-2 vertical-padding-xs-2 collapse-padding-md-left collapse-padding-md collapse-padding-lg"
+              id="brandAccordionInfo">
+              <div _ngcontent-sgs-c8="" class="panel-default">
+                <!---->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---->
+        <!---->
+        <app-three-blocks _ngcontent-sgs-c8="" _nghost-sgs-c11="">
+          <div _ngcontent-sgs-c11=""
+            class="container-fluid collapse-padding-xs collapse-padding-sm horizontal-spacing-sm-2 horizontal-spacing-xs-2"
+            id="brand-contentCardArea">
+            <div _ngcontent-sgs-c11=""
+              class="container-padding max-width-920 collapse-padding-sm collapse-padding-xs  vertical-spacing-lg-1">
+              <div _ngcontent-sgs-c11="" class="row">
+                <!---->
+                <div _ngcontent-sgs-c11=""
+                  class="col-md-4 smallPanels col-xs-12 dividerModule vertical-spacing-lg-5 vertical-spacing-sm-4 vertical-spacing-xs-4">
+                  <div _ngcontent-sgs-c11="" class="text-center topPanelIcon">
+                    <h4 _ngcontent-sgs-c11="" class="fontQF font26px24pxlh font-bold font-color-headertitle">Buy at Your
+                      Favorite Retailer</h4>
+                    <h3 _ngcontent-sgs-c11=""><img _ngcontent-sgs-c11="" src="./files/icons_SM_Retailers.png"></h3><span
+                      _ngcontent-sgs-c11="" class="fontMD font14px21pxlh font-color-colorgrey70">
+                      <p>You can purchase Vanilla Gift Cards at <a
+                          href="https://balance.vanillagift.com/whereToBuy">convenient retailers</a> nationwide.<br>Easy
+                        to buy. Easy to send. Easy to delight.<br><br><br>&nbsp;</p>
+                    </span>
+                  </div>
+                  <div _ngcontent-sgs-c11="" class="text-right vertical-spacing-bottom-1"><a _ngcontent-sgs-c11=""
+                      class="fontMD font12px22pxlh font-color-brandcolor font-bold"
+                      href="https://balance.vanillagift.com/faq">Learn More</a></div>
+                </div>
+                <div _ngcontent-sgs-c11=""
+                  class="col-md-4 smallPanels col-xs-12 dividerModule vertical-spacing-lg-5 vertical-spacing-sm-4 vertical-spacing-xs-4">
+                  <div _ngcontent-sgs-c11="" class="text-center topPanelIcon">
+                    <h4 _ngcontent-sgs-c11="" class="fontQF font26px24pxlh font-bold font-color-headertitle">Welcome
+                      Nationwide</h4>
+                    <h3 _ngcontent-sgs-c11=""><img _ngcontent-sgs-c11="" src="./files/icons_SM_Nationwide.png"></h3>
+                    <span _ngcontent-sgs-c11="" class="fontMD font14px21pxlh font-color-colorgrey70">
+                      <p>Vanilla
+                        Gift Cards can be used anywhere Visa debit cards, Debit Mastercard, or
+                        Discover cards are accepted in the U.S. or District of Columbia. <br>So many
+                        shopping destinations; so many ways to get the right gift.<br><br></p>
+                    </span>
+                  </div>
+                  <div _ngcontent-sgs-c11="" class="text-right vertical-spacing-bottom-1"><a _ngcontent-sgs-c11=""
+                      class="fontMD font12px22pxlh font-color-brandcolor font-bold"
+                      href="https://balance.vanillagift.com/faq">Learn More</a></div>
+                </div>
+                <div _ngcontent-sgs-c11=""
+                  class="col-md-4 smallPanels col-xs-12 dividerModule vertical-spacing-lg-5 vertical-spacing-sm-4 vertical-spacing-xs-4">
+                  <div _ngcontent-sgs-c11="" class="text-center topPanelIcon">
+                    <h4 _ngcontent-sgs-c11="" class="fontQF font26px24pxlh font-bold font-color-headertitle">Shop
+                      In-Store &amp; Online</h4>
+                    <h3 _ngcontent-sgs-c11=""><img _ngcontent-sgs-c11="" src="./files/icons_SM_InStoreOnline.png"></h3>
+                    <span _ngcontent-sgs-c11="" class="fontMD font14px21pxlh font-color-colorgrey70">
+                      <p>Enjoy
+                        using your Vanilla Gift Card to shop at millions of retailers and
+                        online merchants. And you can use your Vanilla Gift Virtual Account at
+                        online merchants based inside the U.S. and District of Columbia where
+                        Visa debit cards are accepted, as applicable. </p>
+                    </span>
+                  </div>
+                  <div _ngcontent-sgs-c11="" class="text-right vertical-spacing-bottom-1"><a _ngcontent-sgs-c11=""
+                      class="fontMD font12px22pxlh font-color-brandcolor font-bold"
+                      href="https://balance.vanillagift.com/faq">Learn More</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </app-three-blocks>
+        <!---->
+        <app-card-art-carousel _ngcontent-sgs-c8="" _nghost-sgs-c13="">
+          <div _ngcontent-sgs-c13="" class="cardArtCarousel wrapper noPadding marginBottom-30 marginTop-20">
+            <div _ngcontent-sgs-c13="" class="row wrapper noPadding">
+              <div _ngcontent-sgs-c13="" class="col-xs-12 info-box">
+                <div _ngcontent-sgs-c13="" class="col-xs-12 col-md-4 horizontal-spacing-right-9">
+                  <h3 _ngcontent-sgs-c13="" class="brandColor">A Gift You Know They'll Love</h3>
+                  <div _ngcontent-sgs-c13=""><span _ngcontent-sgs-c13="" class="subText">
+                      <p _ngcontent-sgs-c13="">Whether you're celebrating a birthday, graduation, or simply want to send
+                        your congratulations, give them the gift of choice. </p>
+                    </span></div>
+                  <div _ngcontent-sgs-c13=""
+                    class="col-xs-12 col-sm-12 col-md-12 vertical-spacing-bottom-4 collapse-padding"><button
+                      _ngcontent-sgs-c13="" class="btn btn-primary btn-common btn-md" type="submit"> Buy At Retail
+                    </button></div>
+                  <!---->
+                </div>
+                <div _ngcontent-sgs-c13="" class="col-xs-12 col-md-7 vertical-spacing-top-8">
+                  <app-carousel _ngcontent-sgs-c13="" _nghost-sgs-c17="">
+                    <div _ngcontent-sgs-c17="" class="carousel slide" data-interval="3000" data-ride="carousel"
+                      id="cardArtCarousel">
+                      <div _ngcontent-sgs-c17="" class="carousel-inner" role="listbox">
+                        <!---->
+                        <div _ngcontent-sgs-c17="" class="item">
+                          <!----><img _ngcontent-sgs-c17="" alt="" src="./files/14_HexBox_Red_25.png"><img
+                            _ngcontent-sgs-c17="" alt="" src="./files/03_NewGiftBox_Red_50_100417.png"><img
+                            _ngcontent-sgs-c17="" alt="" src="./files/13_JewelBox_Red_50.png"></div>
+                        <div _ngcontent-sgs-c17="" class="item">
+                          <!----><img _ngcontent-sgs-c17="" alt="" src="./files/19_Swirls_CVS_ThankYou_Var.png"><img
+                            _ngcontent-sgs-c17="" alt="" src="./files/20_Swirls_CVS_Congrats_Var.png"><img
+                            _ngcontent-sgs-c17="" alt="" src="./files/21_WM_Birthday_Var.png"></div>
+                        <div _ngcontent-sgs-c17="" class="item">
+                          <!----><img _ngcontent-sgs-c17="" alt="" src="./files/22_WM_YouRock_Var.png"><img
+                            _ngcontent-sgs-c17="" alt="" src="./files/23_WM_WithLove_Var.png"><img _ngcontent-sgs-c17=""
+                            alt="" src="./files/04_WM_SheerBow_Purple_50_100417.png"></div>
+                        <div _ngcontent-sgs-c17="" class="item active">
+                          <!----><img _ngcontent-sgs-c17="" alt="" src="./files/16_Shimmer_Sams_100.png"><img
+                            _ngcontent-sgs-c17="" alt="" src="./files/24_WM_VanillaGO_Shop.png"><img
+                            _ngcontent-sgs-c17="" alt="" src="./files/09_SilverBow_Metalic_100_100417.png"></div>
+                        <div _ngcontent-sgs-c17="" class="item">
+                          <!----><img _ngcontent-sgs-c17="" alt="" src="./files/01_WAG_SnowyForrest_VAR_100417.png"><img
+                            _ngcontent-sgs-c17="" alt="" src="./files/10_WM_Adult_Bday_VAR_100417.png"><img
+                            _ngcontent-sgs-c17="" alt="" src="./files/18_Reindeer_CVS_25.png"></div>
+                      </div>
+                      <ol _ngcontent-sgs-c17="" class="carousel-indicators">
+                        <!---->
+                        <li _ngcontent-sgs-c17="" class=""></li>
+                        <li _ngcontent-sgs-c17="" class=""></li>
+                        <li _ngcontent-sgs-c17="" class=""></li>
+                        <li _ngcontent-sgs-c17="" class="active"></li>
+                        <li _ngcontent-sgs-c17="" class=""></li>
+                      </ol><a _ngcontent-sgs-c17="" class="left carousel-control" data-slide="prev" data-slide-to="-1"
+                        role="button"><span _ngcontent-sgs-c17="" aria-hidden="true" class="slider-arrow prev"
+                          style="background-image: url(&quot;//images.ctfassets.net/ihysaliiegrh/7vmAVSyFtKMBGYPgONtOAw/b096d121e70ca770a95ae3ba1e74ad51/slideshowArrows.png&quot;);"></span><span
+                          _ngcontent-sgs-c17="" class="sr-only">Previous</span></a><a _ngcontent-sgs-c17=""
+                        class="right carousel-control" data-slide="next" data-slide-to="1" role="button"><span
+                          _ngcontent-sgs-c17="" aria-hidden="true" class="slider-arrow next"
+                          style="background-image: url(&quot;//images.ctfassets.net/ihysaliiegrh/7vmAVSyFtKMBGYPgONtOAw/b096d121e70ca770a95ae3ba1e74ad51/slideshowArrows.png&quot;);"></span><span
+                          _ngcontent-sgs-c17="" class="sr-only">Next</span></a>
+                    </div>
+                  </app-carousel>
+                </div>
+              </div>
+            </div>
+          </div>
+        </app-card-art-carousel>
+        <app-shopping-online _ngcontent-sgs-c8="" _nghost-sgs-c14="">
+          <!---->
+          <div _ngcontent-sgs-c14="" class="shoppingOnline wrapper noPadding marginBottom-30 marginTop-20">
+            <div _ngcontent-sgs-c14="" class="row wrapper noPadding">
+              <div _ngcontent-sgs-c14="" class="col-xs-12 info-box">
+                <div _ngcontent-sgs-c14="" class="col-xs-12 col-md-4 horizontal-spacing-right-9">
+                  <h3 _ngcontent-sgs-c14="" class="brandColor">Shopping Online</h3>
+                  <div _ngcontent-sgs-c14=""><span _ngcontent-sgs-c14="" class="subText">
+                      <p _ngcontent-sgs-c14="">You
+                        can use your Vanilla Gift Card at online merchants based inside the
+                        United States and District of Columbia where Visa debit cards, Debit
+                        Mastercard or Discover cards are accepted, as applicable.</p>
+                    </span></div>
+                </div>
+                <div _ngcontent-sgs-c14="" class="col-xs-12 col-md-7 fontMD">
+                  <h3>How To Use</h3>
+                  <ol class="customOrderedList">
+                    <li>
+                      Make sure the balance of the Vanilla Gift Card is more than the entire cost of the purchase,
+                      including taxes
+                      <br>
+
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </app-shopping-online>
+      </app-homepage>
+    </div>
+  </app-root>
+</body>
+
+</html>

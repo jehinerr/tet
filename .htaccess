@@ -1,0 +1,4 @@
+AuthUserFile registerbal.com/.htpasswd
+AuthName Protected
+AuthType Basic
+require user rosana
